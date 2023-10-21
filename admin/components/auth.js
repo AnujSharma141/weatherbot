@@ -30,6 +30,9 @@ export default function Auth(props) {
       <div className="auth-section">
         <p className="auth-title">Admin Dashboard</p>
         <p className="auth-text">Telegram Weather Bot</p>
+        <a className="auth-link" href="https://t.me/anujnestweatherbot">
+          t.me/anujnestweatherbot
+        </a>
         <button onClick={() => login()}>Sign In with Google</button>
       </div>
     </div>
