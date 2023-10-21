@@ -10,7 +10,7 @@ const App = () => {
     status: false,
   });
   return authenticated.status ? (
-    <Dashboard setAuth={setAuthenticated} />
+    <Dashboard user={authenticated} setAuth={setAuthenticated} />
   ) : (
     <Auth setAuth={setAuthenticated} />
   );

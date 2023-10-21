@@ -17,13 +17,16 @@ export default function Dashboard(props) {
   return (
     <div className="dashboard-layout">
       <div className="nav">
-        <img
-          src="https://doodleipsum.com/700x700/avatar-2?i=bf8b97258fa53643f64755c68b08041b"
-          className="nav-logo"
-          alt="logo-light"
-          border="0"
-        />
-        <span className="nav-user">user</span>
+        <div className="nav-user-layout">
+          <img
+            src={props.user.data.photoURL}
+            className="nav-logo"
+            alt="logo-light"
+            border="0"
+          />
+          <p className="nav-user">{props.user.data.displayName}</p>
+        </div>
+
         <span
           onClick={() => {
             props.setAuth({ status: false, data: null });
