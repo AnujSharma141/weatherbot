@@ -5,13 +5,15 @@ export default function Dashboard(props) {
   const [data, setData] = useState({ status: false, value: null, names: null });
 
   useEffect(() => {
-    axios.get('http://localhost:3000/users').then((response) =>
-      setData({
-        status: true,
-        value: Object.keys(response.data),
-        names: Object.values(response.data),
-      }),
-    );
+    axios
+      .get('https://nest-weather-bot-telegeam.onrender.com/users')
+      .then((response) =>
+        setData({
+          status: true,
+          value: Object.keys(response.data),
+          names: Object.values(response.data),
+        }),
+      );
   }, []);
 
   return (
