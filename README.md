@@ -4,6 +4,9 @@
 
 
   <p align="center"><a href="http://nodejs.org" target="_blank">Telegram Bot</a> which lets user subscribe for weather updates</p>
+  
+[Telegram](https://t.me/anujnestweatherbot)
+[Admin Panel](https://nest-weather-bot-telegeam.onrender.com/)
 
 ## Description
 
