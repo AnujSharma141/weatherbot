@@ -10,6 +10,7 @@
     "start": "nest start",
     "dev": "webpack serve --hot --config webpack.config.js",
     "build": "webpack",
+    "server": "nest build",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
