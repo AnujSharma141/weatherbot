@@ -22,7 +22,7 @@ export default function Auth(props) {
         props.setAuth({ data: result.user, status: result.user.emailVerified });
       })
       .catch((error) => {
-        setError({ status: true, message: error.message });
+        return error;
       });
   };
   return (
