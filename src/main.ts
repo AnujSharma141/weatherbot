@@ -17,6 +17,12 @@ async function bootstrap() {
   bot.on('message', async (msg) => {
     const chatId: number = msg.chat.id;
     const messageText: string = msg.text;
+    if (messageText === '/start') {
+      bot.sendMessage(
+        chatId,
+        'Welcome to weather bot! Please type /subscribe command to get weather alerts.',
+      );
+    }
     if (messageText === '/subscribe') {
       user.subscribe(
         msg.from.first_name + ' ' + msg.from.last_name,
