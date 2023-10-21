@@ -1,11 +1,13 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable prettier/prettier */
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-entry: "./app.js",
+entry: "./admin/app.js",
 output: {
 filename: "bundle.[hash].js",
-path: path.resolve(__dirname, "dist")
+path: path.resolve(__dirname, "build")
 },
 devServer: {
   port: 9000
@@ -13,7 +15,7 @@ devServer: {
 mode: 'development',
 plugins: [
   new HtmlWebpackPlugin({
-    template: "./public/index.html",
+    template: "./admin/index.html",
   }),
 ],
   module: {
