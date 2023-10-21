@@ -42,7 +42,7 @@ async function bootstrap() {
           chatId,
           `You are now subscribed to weather alerts for ${city}.`,
         );
-        schedule.scheduleJob('*/10 * * * * *', async () => {
+        schedule.scheduleJob('*/30 * * * *', async () => {
           const weather = new WeatherService();
           bot.sendMessage(
             chatId,
